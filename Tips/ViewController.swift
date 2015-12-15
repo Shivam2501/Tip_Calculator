@@ -123,7 +123,7 @@ class ViewController: UIViewController {
         let tipPeople = NSString(string: numberPeople.text!).doubleValue
         let amountPeople=total/tipPeople
         peopleTotal.text=String(format: "$%.2f", amountPeople)
-
+        view.endEditing(true)
     }
     
     @IBAction func NoTap(sender: AnyObject) {
@@ -142,6 +142,7 @@ class ViewController: UIViewController {
         let tipPeople = NSString(string: numberPeople.text!).doubleValue
         let amountPeople=total/tipPeople
         peopleTotal.text=String(format: "$%.2f", amountPeople)
+        view.endEditing(true)
     }
     @IBAction func happyTap(sender: AnyObject) {
         let tipAmount1=20
@@ -159,6 +160,7 @@ class ViewController: UIViewController {
         let tipPeople = NSString(string: numberPeople.text!).doubleValue
         let amountPeople=total/tipPeople
         peopleTotal.text=String(format: "$%.2f", amountPeople)
+        view.endEditing(true)
     }
     
     @IBAction func onePerson(sender: AnyObject) {
@@ -168,6 +170,7 @@ class ViewController: UIViewController {
         var totalAmount = yourVariable
         totalAmount=totalAmount/tipAmount
         peopleTotal.text=String(format: "$%.2f", totalAmount)
+        view.endEditing(true)
     }
     
     @IBAction func twoPerson(sender: AnyObject) {
@@ -177,6 +180,7 @@ class ViewController: UIViewController {
         var totalAmount = yourVariable
         totalAmount=totalAmount/tipAmount
         peopleTotal.text=String(format: "$%.2f", totalAmount)
+        view.endEditing(true)
     }
     
     @IBAction func fourPerson(sender: AnyObject) {
@@ -186,6 +190,7 @@ class ViewController: UIViewController {
         var totalAmount = yourVariable
         totalAmount=totalAmount/tipAmount
         peopleTotal.text=String(format: "$%.2f", totalAmount)
+        view.endEditing(true)
     }
     
     @IBAction func refreshTap(sender: AnyObject) {
@@ -193,7 +198,7 @@ class ViewController: UIViewController {
         peopleTotal.text=String(format: "$%.2f", totalAmount)
         tipTotal.text=String(format: "$%.2f", totalAmount)
         amountField.text=String("")
-        
+        totalSum.text=String(format: "$%.2f", totalAmount)
         let defaults = NSUserDefaults.standardUserDefaults()
         let intValue = defaults.integerForKey("tipValue")
         tipPercent.text=String(format: "%d%%",intValue)
