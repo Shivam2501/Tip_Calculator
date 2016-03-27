@@ -312,6 +312,7 @@
                         <outlet property="downPercent" destination="edH-ye-Ek2" id="aju-u7-Bj1"/>
                         <outlet property="numberPeople" destination="u1g-ft-wsc" id="SAf-R2-ZWy"/>
                         <outlet property="peopleTotal" destination="acB-79-UWm" id="ery-vb-dMm"/>
+                        <outlet property="tapSad" destination="gPT-QR-4ib" id="AMg-s8-Ur8"/>
                         <outlet property="tipPercent" destination="DqF-E3-E46" id="tQd-Ci-7qI"/>
                         <outlet property="tipTotal" destination="xLg-l4-pXK" id="Tc2-pK-sF8"/>
                         <outlet property="totalSum" destination="UlH-2x-HAh" id="hIb-Px-cAe"/>

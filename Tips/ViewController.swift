@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalSum: UILabel!
     
+    @IBOutlet weak var tapSad: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -124,6 +125,7 @@ class ViewController: UIViewController {
         let amountPeople=total/tipPeople
         peopleTotal.text=String(format: "$%.2f", amountPeople)
         view.endEditing(true)
+        
     }
     
     @IBAction func NoTap(sender: AnyObject) {
